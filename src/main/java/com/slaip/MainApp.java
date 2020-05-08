@@ -19,8 +19,5 @@ public class MainApp extends Application {
         stage.setTitle("DB Editor");
         stage.setScene(scene);
         stage.show();
-//        ArticleDao articleDao = new ArticleDao();
-//        articleDao.getArticles().forEach(System.out::println);
     }
-
 }

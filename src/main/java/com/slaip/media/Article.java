@@ -6,6 +6,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "article")
 public class Article {
+
     private String url;
     private String author;
     private String title;

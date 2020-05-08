@@ -6,9 +6,11 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
+// TODO: 5/8/20 need DI?
 public class ArticleDao {
-    public void saveArticle(Article article) {
 
+    // TODO: 5/8/20 research: it's the only way to save?
+    public void saveArticle(Article article) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
